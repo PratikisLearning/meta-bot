@@ -1,0 +1,36 @@
+{
+  "name": "meta-bot",
+  "version": "1.0.0",
+  "description": "A weekly goal planner bot for discord",
+  "main": "index.js",
+  "engines": {
+    "node": "16.13.1"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon -r dotenv/config server/index.js --ignore \"./client/\"",
+    "client": "npm start --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajinkya2000/meta-bot.git"
+  },
+  "author": "Ajinkya Deshpande",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ajinkya2000/meta-bot/issues"
+  },
+  "homepage": "https://github.com/Ajinkya2000/meta-bot#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "discord.js": "^13.6.0",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,50 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Utilities */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.error-text {
+  font-size: 0.9rem;
+}
+
+/* Home */
+.home,
+.add-goal {
+  height: 100vh;
+}
+
+.home-card,
+.add-goal-card {
+  width: max(400px, 50%);
+}
+
+/* Add Goal */
+.date-picker > * {
+  border: none;
+}
+
+.react-date-picker__inputGroup__input:invalid {
+  background: none;
+}
+
+/* Goal List */
+.add-goal-form {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.add-goal-form-inner {
+  width: 100%;
+}
+
+.add-icon > img {
+  height: 25px;
+}
